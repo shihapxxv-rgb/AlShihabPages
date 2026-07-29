@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="2">
+<title>أكاديمية الشهاب</title>
+<script>
+async function go(){
+  const r=await fetch("current.json?"+Date.now());
+  const j=await r.json();
+  if(j.url) location.href=j.url;
+}
+go();
+</script>
+</head>
+<body style="font-family:Tajawal;text-align:center;padding-top:100px">
+<h2>🌙 أكاديمية الشهاب</h2>
+<p>جارٍ فتح الأكاديمية...</p>
+</body>
+</html>
